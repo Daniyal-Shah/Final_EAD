@@ -3,7 +3,9 @@ require("./database/conn");
 const express = require("express");
 const BlogModel = require("./model/blog.model");
 const app = express();
+const cors = require("cors");
 app.use(express.json());
+app.use(cors());
 
 //Create
 app.post("/api/blogs", async (req, res) => {

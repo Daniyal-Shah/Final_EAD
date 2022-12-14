@@ -9,6 +9,10 @@ const BlogSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  url: {
+    type: String,
+    required: true,
+  },
 });
 
 const BlogModel = mongoose.model("blog", BlogSchema);
